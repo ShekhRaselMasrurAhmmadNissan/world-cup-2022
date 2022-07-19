@@ -179,4 +179,45 @@
 .tablet-view #view-all a {
 	color: white;
 }
+
 /* Main Section Style End */
+
+
+/* Footer Section Start */
+footer {
+	background-color: var(--background);
+	color: white;
+}
+footer a {
+	color: white;
+}
+
+footer .footer-container {
+	margin-left: 140px;
+	width: 80%;
+	text-align: center;
+	gap: 50px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.footer-container #footer-title {
+	margin-top: 30px;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.footer-container #other-information, #social-media {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer-container #social-media {
+	font-size: 1.5em;
+	width: 30%;
+	margin-left: 35%;
+	margin-bottom: 30px;
+}
+/* Footer Section End */
