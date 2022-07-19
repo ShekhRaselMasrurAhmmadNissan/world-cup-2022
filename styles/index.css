@@ -1,0 +1,81 @@
+/* CSS Variables */
+:root {
+	--header-background: rgba(22, 22, 22, 1);
+	--button-background: rgba(221, 0, 0, 1);
+}
+
+/* Keyframe Queries */
+@keyframes slide {
+	0% {
+		background-image: url("../images/neymar.png");
+	}
+	25% {
+		background-image: url("../images/Banner-Image.png");
+	}
+	50% {
+		background-image: url("../images/Cristiano-Ronaldo.png");
+	}
+	75% {
+		background-image: url("../images/lionel-messi.png");
+	}
+	100% {
+		background-image: url("../images/neymar.png");
+	}
+}
+
+
+/* Header Section Style Start */
+#heading {
+	color: white;
+	background-color: var(--header-background);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 30px;
+	margin-bottom: 130px;
+}
+
+#heading .heading-information {
+	padding-left: 100px;
+}
+
+#heading .heading-information #heading-title {
+	font-size: 70px;
+	line-height: 80px;
+	margin-bottom: 20px;
+}
+
+#heading .heading-information p {
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+#heading .heading-information #watch-live {
+	font-size: 20px;
+	color: white;
+	padding: 16px 25px;
+	background-color: var(--button-background);
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+.heading-information #watch-live .fa-angle-right {
+	margin-left: 10px;
+	align-items: center;
+}
+
+#heading .half-width {
+	width: 40%;
+}
+
+#heading .heading-image-slider {
+	width: 581px;
+	height: 613px;
+	background-image: url("../images/neymar.png");
+	overflow: visible;
+	background-size: 570px 600px;
+	background-repeat: no-repeat;
+	animation: slide 16s infinite 2s;
+}
+/* Header Section Style End */

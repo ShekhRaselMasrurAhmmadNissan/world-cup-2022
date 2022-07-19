@@ -1,0 +1,32 @@
+/* Global Styles */
+
+/* Importing the important Style Sheets */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Stylish&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+/* Importing the important Style Sheets End */
+
+/* CSS variables Start */
+:root {
+	--primary-font: 'Josefin Sans', sans-serif;
+	--secondary-font: 'Stylish', sans-serif;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 50px 140px 75px;
+}
+
+.btn {
+	transition: transform .2s ease-in-out;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
