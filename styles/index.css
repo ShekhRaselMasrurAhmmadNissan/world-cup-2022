@@ -63,7 +63,8 @@
 	border-radius: 10px;
 }
 
-#heading .heading-information #watch-live a {
+#heading .heading-information #watch-live {
+	text-decoration: none;
 	color: white;
 }
 
@@ -114,30 +115,30 @@
 	padding: 16px 25px;
 	border: 1px solid transparent;
 	border-radius: 10px;
-}
-
-.menu-bar .menu a {
+	text-align: center;
 	color: black;
+	background-color: white;
 }
 
 .menu-bar .menu.active {
 	background-color: var(--button-background);
 }
 
-.menu-bar .menu.active a {
+.menu-bar .menu.active {
 	color: white;
 }
 
 #container .blogs,
-#container .groups {
+#container .groups,
+#container .matches {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 24px;
 }
 
 .blogs .blog,
-.groups .group {
-
+.groups .group,
+.matches .match {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.405);
@@ -146,7 +147,8 @@
 }
 
 .blogs .blog:hover,
-.groups .group:hover {
+.groups .group:hover,
+.matches .match:hover {
 	transform: scale(1.1);
 }
 
@@ -197,7 +199,7 @@
 	color: white;
 }
 
-/* ALL GROUP PAGE DESIGN */
+/* ALL GROUP PAGE DESIGN START */
 .groups .group {
 	text-align: center;
 	padding: 20px;
@@ -216,6 +218,33 @@
 	flex-direction: column;
 	row-gap: 8px;
 }
+/* All Group Page Design End */
+
+
+/* Upcoming Matches Design Start */
+.matches .match {
+	align-items: center;
+	row-gap: 20px;
+	padding: 20px;
+}
+
+.match .flags {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.match .countries-name {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.match .time {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+/* Upcoming Matches Design End */
 
 /* Main Section Style End */
 
