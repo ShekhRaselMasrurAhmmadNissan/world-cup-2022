@@ -9,15 +9,19 @@
 	0% {
 		background-image: url("../images/neymar.png");
 	}
+
 	25% {
 		background-image: url("../images/Banner-Image.png");
 	}
+
 	50% {
 		background-image: url("../images/Cristiano-Ronaldo.png");
 	}
+
 	75% {
 		background-image: url("../images/lionel-messi.png");
 	}
+
 	100% {
 		background-image: url("../images/neymar.png");
 	}
@@ -62,6 +66,7 @@
 #heading .heading-information #watch-live a {
 	color: white;
 }
+
 .heading-information #watch-live .fa-angle-right {
 	margin-left: 10px;
 	align-items: center;
@@ -81,6 +86,7 @@
 	background-repeat: no-repeat;
 	animation: slide 20s infinite 2s;
 }
+
 /* Header Section Style End */
 
 
@@ -92,6 +98,7 @@
 	grid-template-columns: 1fr 3fr;
 	gap: 24px;
 }
+
 #container .menu-bar {
 	background-color: var(--background);
 	padding: 30px;
@@ -101,6 +108,7 @@
 	height: max-content;
 	border-radius: 10px;
 }
+
 .menu-bar .menu {
 	font-size: 20px;
 	padding: 16px 25px;
@@ -120,13 +128,15 @@
 	color: white;
 }
 
-#container .blogs {
+#container .blogs,
+#container .groups {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 24px;
 }
 
-.blogs .blog {
+.blogs .blog,
+.groups .group {
 
 	display: flex;
 	flex-direction: column;
@@ -135,7 +145,8 @@
 	transition: transform .2s cubic-bezier(0.6, -0.87, 0, 1.86) 0s;
 }
 
-.blogs .blog:hover {
+.blogs .blog:hover,
+.groups .group:hover {
 	transform: scale(1.1);
 }
 
@@ -186,6 +197,26 @@
 	color: white;
 }
 
+/* ALL GROUP PAGE DESIGN */
+.groups .group {
+	text-align: center;
+	padding: 20px;
+}
+
+.groups .group .group-title {
+	font-size: 1.8em;
+	margin-bottom: 15px;
+	color: crimson;
+	text-decoration: underline;
+}
+
+.groups .group .teams {
+	font-size: 1.2em;
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
 /* Main Section Style End */
 
 
@@ -194,6 +225,7 @@ footer {
 	background-color: var(--background);
 	color: white;
 }
+
 footer a {
 	color: white;
 }
@@ -215,7 +247,8 @@ footer .footer-container {
 	line-height: 60px;
 }
 
-.footer-container #other-information, #social-media {
+.footer-container #other-information,
+#social-media {
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -226,4 +259,5 @@ footer .footer-container {
 	margin-left: 35%;
 	margin-bottom: 30px;
 }
+
 /* Footer Section End */
