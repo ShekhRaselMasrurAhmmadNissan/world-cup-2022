@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 /* Mobile View Responsive Start */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	header,
 	main {
 		margin: 40px 20px;
@@ -60,10 +60,10 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	#container .blog,
-	#container .group,
-	#container .match {
-		transition-property: none;
+	.blogs .blog:hover,
+	.groups .group:hover,
+	.matches .match:hover {
+		transform: scale(1);
 	}
 
 	/* Main Section Responsive End */
